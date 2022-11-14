@@ -31,29 +31,35 @@ class MyApp extends StatelessWidget {
           body: Container(
             child: Center(
               child: Column(children: [
-                CircleAvatar(
-                    backgroundImage: AssetImage("assets/animal.jpeg"),
-                    // width: 200,
-                    // height: 200,
-                    radius: 70),
-                Row(
-                  // crossAxisAlignment: CrossAxisAlignment.center
-                  children: [
-                    Text(
-                      "Name: Kermit",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                    Spacer(),
-                    Text(
-                      "Age: 5",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                    Spacer(),
-                    Text(
-                      "Gender: Male",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 50),
+                  child: CircleAvatar(
+                      backgroundImage: AssetImage("assets/animal.jpeg"),
+                      // width: 200,
+                      // height: 200,
+                      radius: 70),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Row(
+                    // crossAxisAlignment: CrossAxisAlignment.center
+                    children: [
+                      Text(
+                        "Name: Kermit",
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Spacer(),
+                      Text(
+                        "Age: 5",
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Spacer(),
+                      Text(
+                        "Gender: Male",
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ],
+                  ),
                 ),
               ]),
             ),
